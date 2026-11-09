@@ -548,7 +548,7 @@ app.listen(PORT, () => {
 // Keepalive — self-ping cada 14 min (detecta Railway o Render automáticamente)
 const SELF_URL = process.env.RAILWAY_PUBLIC_DOMAIN
   ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}/health`
-  : 'https://ajammmsiiiiii.onrender.com/health';
+  : 'https://bbytueremala.onrender.com/health';
 setInterval(() => {
   fetch(SELF_URL)
     .then(() => console.log(`[KEEPALIVE] ${new Date().toISOString()}`))
